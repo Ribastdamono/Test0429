@@ -1,0 +1,1004 @@
+test0330c/Sandbox#<init>#()V#null
+  0: (L00000)
+  1: (line=10)
+  2: ALOAD 0 (this)
+  3: INVOKESPECIAL test0330c/SandAbst#<init>()V
+  4: (L00004)
+  5: (line=11)
+  6: ALOAD 0 (this)
+  7: LDC abc
+  8: PUTFIELD test0330c/Sandbox#s: java/lang/String
+  9: (L00009)
+  10: (line=10)
+  11: RETURN
+  12: (L00012)
+    PARAM -> 2 (LOCAL:0)  this: Ltest0330c/Sandbox;
+    2 -> 3 (STACK:0)  
+    PARAM -> 6 (LOCAL:0)  this: Ltest0330c/Sandbox;
+    6 -> 8 [1/2] (STACK:0)  
+    7 -> 8 [2/2] (STACK:1)  
+    [CFLOW] 0 -> 1
+    [CFLOW] 1 -> 2
+    [CFLOW] 2 -> 3
+    [CFLOW] 3 -> 4
+    [CFLOW] 4 -> 5
+    [CFLOW] 5 -> 6
+    [CFLOW] 6 -> 7
+    [CFLOW] 7 -> 8
+    [CFLOW] 8 -> 9
+    [CFLOW] 9 -> 10
+    [CFLOW] 10 -> 11
+test0330c/Sandbox#staticMethod#()Ljava/lang/String;#null
+  0: (L00000)
+  1: (line=14)
+  2: LDC abc
+  3: ARETURN
+    2 -> 3 (STACK:0)  
+    [CFLOW] 0 -> 1
+    [CFLOW] 1 -> 2
+    [CFLOW] 2 -> 3
+test0330c/Sandbox#privateMethod#()Ljava/lang/String;#null
+  0: (L00000)
+  1: (line=18)
+  2: LDC abc
+  3: ARETURN
+  4: (L00004)
+    2 -> 3 (STACK:0)  
+    [CFLOW] 0 -> 1
+    [CFLOW] 1 -> 2
+    [CFLOW] 2 -> 3
+test0330c/Sandbox#prstMethod#()Ljava/lang/String;#null
+  0: (L00000)
+  1: (line=22)
+  2: LDC abc
+  3: ARETURN
+    2 -> 3 (STACK:0)  
+    [CFLOW] 0 -> 1
+    [CFLOW] 1 -> 2
+    [CFLOW] 2 -> 3
+test0330c/Sandbox#listMethod#(Ljava/util/ArrayList;)Ljava/lang/String;#(Ljava/util/ArrayList<Ljava/lang/String;>;)Ljava/lang/String;
+  0: (L00000)
+  1: (line=26)
+  2: ALOAD 1 (a)
+  3: ICONST_0
+  4: INVOKEVIRTUAL java/util/ArrayList#get(I)Ljava/lang/Object;
+  5: CHECKCAST
+  6: ARETURN
+  7: (L00007)
+    PARAM -> 2 (LOCAL:1)  a: Ljava/util/ArrayList;
+    2 -> 4 [1/2] (STACK:0)  
+    3 -> 4 [2/2] (STACK:1)  
+    4 -> 5 (STACK:0)  
+    5 -> 6 (STACK:0)  
+    [CFLOW] 0 -> 1
+    [CFLOW] 1 -> 2
+    [CFLOW] 2 -> 3
+    [CFLOW] 3 -> 4
+    [CFLOW] 4 -> 5
+    [CFLOW] 5 -> 6
+test0330c/Sandbox#listbaseMethod#(Ljava/util/List;)Ljava/lang/String;#(Ljava/util/List<Ljava/lang/String;>;)Ljava/lang/String;
+  0: (L00000)
+  1: (line=29)
+  2: ALOAD 1 (a)
+  3: ICONST_0
+  4: INVOKEINTERFACE java/util/List#get(I)Ljava/lang/Object;
+  5: CHECKCAST
+  6: ARETURN
+  7: (L00007)
+    PARAM -> 2 (LOCAL:1)  a: Ljava/util/List;
+    2 -> 4 [1/2] (STACK:0)  
+    3 -> 4 [2/2] (STACK:1)  
+    4 -> 5 (STACK:0)  
+    5 -> 6 (STACK:0)  
+    [CFLOW] 0 -> 1
+    [CFLOW] 1 -> 2
+    [CFLOW] 2 -> 3
+    [CFLOW] 3 -> 4
+    [CFLOW] 4 -> 5
+    [CFLOW] 5 -> 6
+test0330c/Sandbox#arrayMethod#([Ljava/lang/String;)Ljava/lang/String;#null
+  0: (L00000)
+  1: (line=32)
+  2: ALOAD 1 (a)
+  3: ICONST_0
+  4: AALOAD
+  5: ARETURN
+  6: (L00006)
+    PARAM -> 2 (LOCAL:1)  a: [Ljava/lang/String;
+    2 -> 4 [1/2] (STACK:0)  
+    3 -> 4 [2/2] (STACK:1)  
+    4 -> 5 (STACK:0)  
+    [CFLOW] 0 -> 1
+    [CFLOW] 1 -> 2
+    [CFLOW] 2 -> 3
+    [CFLOW] 3 -> 4
+    [CFLOW] 4 -> 5
+test0330c/Sandbox#basicMethod#(Ljava/lang/String;)Ljava/lang/String;#null
+  0: (L00000)
+  1: (line=36)
+  2: ICONST_0
+  3: ISTORE 2 (b)
+  4: (L00004)
+  5: (line=37)
+  6: LDC 5.0
+  7: DSTORE 3 (a)
+  8: (L00008)
+  9: (line=38)
+  10: LDC s
+  11: ARETURN
+  12: (L00012)
+    2 -> 3 (STACK:0)  
+    6 -> 7 (STACK:0)  
+    10 -> 11 (STACK:0)  
+    [CFLOW] 0 -> 1
+    [CFLOW] 1 -> 2
+    [CFLOW] 2 -> 3
+    [CFLOW] 3 -> 4
+    [CFLOW] 4 -> 5
+    [CFLOW] 5 -> 6
+    [CFLOW] 6 -> 7
+    [CFLOW] 7 -> 8
+    [CFLOW] 8 -> 9
+    [CFLOW] 9 -> 10
+    [CFLOW] 10 -> 11
+test0330c/Sandbox#basicMehotd2#(Ljava/lang/String;)Ljava/lang/String;#null
+  0: (L00000)
+  1: (line=42)
+  2: ALOAD 1 (s)
+  3: ARETURN
+  4: (L00004)
+    PARAM -> 2 (LOCAL:1)  s: Ljava/lang/String;
+    2 -> 3 (STACK:0)  
+    [CFLOW] 0 -> 1
+    [CFLOW] 1 -> 2
+    [CFLOW] 2 -> 3
+test0330c/Sandbox#noArgMethod#()Ljava/lang/String;#null
+  0: (L00000)
+  1: (line=45)
+  2: LDC abc
+  3: ARETURN
+  4: (L00004)
+    2 -> 3 (STACK:0)  
+    [CFLOW] 0 -> 1
+    [CFLOW] 1 -> 2
+    [CFLOW] 2 -> 3
+test0330c/Sandbox#listArrayMethod#([Ljava/util/ArrayList;)Ljava/lang/String;#([Ljava/util/ArrayList<Ljava/lang/String;>;)Ljava/lang/String;
+  0: (L00000)
+  1: (line=49)
+  2: ALOAD 1 (a)
+  3: ICONST_0
+  4: AALOAD
+  5: ICONST_0
+  6: INVOKEVIRTUAL java/util/ArrayList#get(I)Ljava/lang/Object;
+  7: CHECKCAST
+  8: ARETURN
+  9: (L00009)
+    PARAM -> 2 (LOCAL:1)  a: [Ljava/util/ArrayList;
+    2 -> 4 [1/2] (STACK:0)  
+    3 -> 4 [2/2] (STACK:1)  
+    4 -> 6 [1/2] (STACK:0)  
+    5 -> 6 [2/2] (STACK:1)  
+    6 -> 7 (STACK:0)  
+    7 -> 8 (STACK:0)  
+    [CFLOW] 0 -> 1
+    [CFLOW] 1 -> 2
+    [CFLOW] 2 -> 3
+    [CFLOW] 3 -> 4
+    [CFLOW] 4 -> 5
+    [CFLOW] 5 -> 6
+    [CFLOW] 6 -> 7
+    [CFLOW] 7 -> 8
+test0330c/Sandbox#arrayListMethod#(Ljava/util/ArrayList;)Ljava/lang/String;#(Ljava/util/ArrayList<[Ljava/lang/String;>;)Ljava/lang/String;
+  0: (L00000)
+  1: (line=53)
+  2: ALOAD 1 (a)
+  3: ICONST_0
+  4: INVOKEVIRTUAL java/util/ArrayList#get(I)Ljava/lang/Object;
+  5: CHECKCAST
+  6: ICONST_0
+  7: AALOAD
+  8: ARETURN
+  9: (L00009)
+    PARAM -> 2 (LOCAL:1)  a: Ljava/util/ArrayList;
+    2 -> 4 [1/2] (STACK:0)  
+    3 -> 4 [2/2] (STACK:1)  
+    4 -> 5 (STACK:0)  
+    5 -> 7 [1/2] (STACK:0)  
+    6 -> 7 [2/2] (STACK:1)  
+    7 -> 8 (STACK:0)  
+    [CFLOW] 0 -> 1
+    [CFLOW] 1 -> 2
+    [CFLOW] 2 -> 3
+    [CFLOW] 3 -> 4
+    [CFLOW] 4 -> 5
+    [CFLOW] 5 -> 6
+    [CFLOW] 6 -> 7
+    [CFLOW] 7 -> 8
+test0330c/Sandbox#listObjectMethod#(Ljava/util/ArrayList;)Ljava/lang/String;#(Ljava/util/ArrayList<Ltest0330c/Sandbox;>;)Ljava/lang/String;
+  0: (L00000)
+  1: (line=57)
+  2: ALOAD 1 (a)
+  3: ICONST_0
+  4: INVOKEVIRTUAL java/util/ArrayList#get(I)Ljava/lang/Object;
+  5: CHECKCAST
+  6: GETFIELD test0330c/Sandbox#s: java/lang/String
+  7: ARETURN
+  8: (L00008)
+    PARAM -> 2 (LOCAL:1)  a: Ljava/util/ArrayList;
+    2 -> 4 [1/2] (STACK:0)  
+    3 -> 4 [2/2] (STACK:1)  
+    4 -> 5 (STACK:0)  
+    5 -> 6 (STACK:0)  
+    6 -> 7 (STACK:0)  
+    [CFLOW] 0 -> 1
+    [CFLOW] 1 -> 2
+    [CFLOW] 2 -> 3
+    [CFLOW] 3 -> 4
+    [CFLOW] 4 -> 5
+    [CFLOW] 5 -> 6
+    [CFLOW] 6 -> 7
+test0330c/Sandbox#arrayObjectMethod#([Ltest0330c/Sandbox;)Ljava/lang/String;#null
+  0: (L00000)
+  1: (line=61)
+  2: ALOAD 1 (a)
+  3: ICONST_0
+  4: AALOAD
+  5: GETFIELD test0330c/Sandbox#s: java/lang/String
+  6: ARETURN
+  7: (L00007)
+    PARAM -> 2 (LOCAL:1)  a: [Ltest0330c/Sandbox;
+    2 -> 4 [1/2] (STACK:0)  
+    3 -> 4 [2/2] (STACK:1)  
+    4 -> 5 (STACK:0)  
+    5 -> 6 (STACK:0)  
+    [CFLOW] 0 -> 1
+    [CFLOW] 1 -> 2
+    [CFLOW] 2 -> 3
+    [CFLOW] 3 -> 4
+    [CFLOW] 4 -> 5
+    [CFLOW] 5 -> 6
+test0330c/Sandbox#main#([Ljava/lang/String;)V#null
+  0: (L00000)
+  1: (line=67)
+  2: NEW
+  3: DUP
+  4: INVOKESPECIAL test0330c/Sandbox#<init>()V
+  5: ASTORE 1 (s)
+  6: (L00006)
+  7: (line=68)
+  8: ALOAD 1 (s)
+  9: INVOKEVIRTUAL java/lang/Object#getClass()Ljava/lang/Class;
+  10: INVOKEVIRTUAL java/lang/Class#getDeclaredMethods()[Ljava/lang/reflect/Method;
+  11: ASTORE 2 (ms)
+  12: (L00012)
+  13: (line=69)
+  14: ICONST_0
+  15: ISTORE 3 (i)
+  16: (L00016)
+  17: GOTO L00181
+  18: (L00018)
+  19: (line=71)
+  20: FRAME-OP(1)
+  21: ALOAD 2 (ms)
+  22: ILOAD 3 (i)
+  23: AALOAD
+  24: INVOKEVIRTUAL java/lang/reflect/Method#toString()Ljava/lang/String;
+  25: LDC listArray
+  26: INVOKEVIRTUAL java/lang/String#contains(Ljava/lang/CharSequence;)Z
+  27: IFEQ L00177
+  28: (L00028)
+  29: (line=72)
+  30: ALOAD 2 (ms)
+  31: ILOAD 3 (i)
+  32: AALOAD
+  33: INVOKEVIRTUAL java/lang/reflect/Method#getGenericParameterTypes()[Ljava/lang/reflect/Type;
+  34: ASTORE 4 (ts)
+  35: (L00035)
+  36: (line=73)
+  37: GETSTATIC java/lang/System#out: java/io/PrintStream
+  38: ALOAD 4 (ts)
+  39: ICONST_0
+  40: AALOAD
+  41: INVOKEVIRTUAL java/io/PrintStream#println(Ljava/lang/Object;)V
+  42: (L00042)
+  43: (line=74)
+  44: GETSTATIC java/lang/System#out: java/io/PrintStream
+  45: ALOAD 2 (ms)
+  46: ILOAD 3 (i)
+  47: AALOAD
+  48: INVOKEVIRTUAL java/lang/reflect/Method#getParameterTypes()[Ljava/lang/Class;
+  49: ICONST_0
+  50: AALOAD
+  51: INVOKEVIRTUAL java/lang/Class#toString()Ljava/lang/String;
+  52: INVOKEVIRTUAL java/io/PrintStream#println(Ljava/lang/String;)V
+  53: (L00053)
+  54: (line=75)
+  55: ALOAD 4 (ts)
+  56: ICONST_0
+  57: AALOAD
+  58: CHECKCAST
+  59: ASTORE 5 (cs)
+  60: (L00060)
+  61: (line=76)
+  62: GETSTATIC java/lang/System#out: java/io/PrintStream
+  63: ALOAD 5 (cs)
+  64: INVOKEVIRTUAL java/lang/Class#getComponentType()Ljava/lang/Class;
+  65: INVOKEVIRTUAL java/io/PrintStream#println(Ljava/lang/Object;)V
+  66: (L00066)
+  67: (line=77)
+  68: ALOAD 4 (ts)
+  69: ICONST_0
+  70: AALOAD
+  71: CHECKCAST
+  72: ASTORE 6 (gt)
+  73: (L00073)
+  74: (line=79)
+  75: ALOAD 6 (gt)
+  76: INVOKEINTERFACE java/lang/reflect/ParameterizedType#getRawType()Ljava/lang/reflect/Type;
+  77: ASTORE 7 (t)
+  78: (L00078)
+  79: (line=81)
+  80: ALOAD 7 (t)
+  81: INSTANCEOF
+  82: IFEQ L00094
+  83: (L00083)
+  84: (line=82)
+  85: GETSTATIC java/lang/System#out: java/io/PrintStream
+  86: NEW
+  87: DUP
+  88: LDC Class: 
+  89: INVOKESPECIAL java/lang/StringBuilder#<init>(Ljava/lang/String;)V
+  90: ALOAD 7 (t)
+  91: INVOKEVIRTUAL java/lang/StringBuilder#append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  92: INVOKEVIRTUAL java/lang/StringBuilder#toString()Ljava/lang/String;
+  93: INVOKEVIRTUAL java/io/PrintStream#println(Ljava/lang/String;)V
+  94: (L00094)
+  95: (line=84)
+  96: FRAME-OP(0)
+  97: LDC Ljava/util/List;
+  98: ALOAD 7 (t)
+  99: CHECKCAST
+  100: INVOKEVIRTUAL java/lang/Class#isAssignableFrom(Ljava/lang/Class;)Z
+  101: IFEQ L00177
+  102: (L00102)
+  103: (line=85)
+  104: GETSTATIC java/lang/System#out: java/io/PrintStream
+  105: LDC List
+  106: INVOKEVIRTUAL java/io/PrintStream#println(Ljava/lang/String;)V
+  107: (L00107)
+  108: (line=86)
+  109: ALOAD 6 (gt)
+  110: INVOKEINTERFACE java/lang/reflect/ParameterizedType#getActualTypeArguments()[Ljava/lang/reflect/Type;
+  111: ASTORE 8 (type3)
+  112: (L00112)
+  113: (line=87)
+  114: GETSTATIC java/lang/System#out: java/io/PrintStream
+  115: ALOAD 8 (type3)
+  116: ICONST_0
+  117: AALOAD
+  118: INVOKEINTERFACE java/lang/reflect/Type#getTypeName()Ljava/lang/String;
+  119: INVOKEVIRTUAL java/io/PrintStream#println(Ljava/lang/String;)V
+  120: (L00120)
+  121: (line=88)
+  122: ALOAD 8 (type3)
+  123: ICONST_0
+  124: AALOAD
+  125: INSTANCEOF
+  126: IFEQ L00171
+  127: (L00127)
+  128: (line=89)
+  129: GETSTATIC java/lang/System#out: java/io/PrintStream
+  130: LDC this is class
+  131: INVOKEVIRTUAL java/io/PrintStream#println(Ljava/lang/String;)V
+  132: (L00132)
+  133: (line=90)
+  134: GETSTATIC java/lang/System#out: java/io/PrintStream
+  135: ALOAD 8 (type3)
+  136: ICONST_0
+  137: AALOAD
+  138: INVOKEINTERFACE java/lang/reflect/Type#getTypeName()Ljava/lang/String;
+  139: INVOKEVIRTUAL java/io/PrintStream#println(Ljava/lang/String;)V
+  140: (L00140)
+  141: (line=91)
+  142: GETSTATIC java/lang/System#out: java/io/PrintStream
+  143: ALOAD 8 (type3)
+  144: ICONST_0
+  145: AALOAD
+  146: INVOKEVIRTUAL java/lang/Object#toString()Ljava/lang/String;
+  147: INVOKEVIRTUAL java/io/PrintStream#println(Ljava/lang/String;)V
+  148: (L00148)
+  149: (line=92)
+  150: ALOAD 8 (type3)
+  151: ICONST_0
+  152: AALOAD
+  153: CHECKCAST
+  154: ASTORE 9 (c4)
+  155: (L00155)
+  156: (line=93)
+  157: GETSTATIC java/lang/System#out: java/io/PrintStream
+  158: ALOAD 9 (c4)
+  159: INVOKEVIRTUAL java/lang/Object#getClass()Ljava/lang/Class;
+  160: INVOKEVIRTUAL java/lang/Class#getName()Ljava/lang/String;
+  161: INVOKEVIRTUAL java/io/PrintStream#println(Ljava/lang/String;)V
+  162: (L00162)
+  163: (line=94)
+  164: GETSTATIC java/lang/System#out: java/io/PrintStream
+  165: ALOAD 9 (c4)
+  166: INVOKEVIRTUAL java/lang/Class#toString()Ljava/lang/String;
+  167: INVOKEVIRTUAL java/io/PrintStream#println(Ljava/lang/String;)V
+  168: (L00168)
+  169: (line=95)
+  170: GOTO L00177
+  171: (L00171)
+  172: (line=96)
+  173: FRAME-OP(1)
+  174: GETSTATIC java/lang/System#out: java/io/PrintStream
+  175: LDC this is not class
+  176: INVOKEVIRTUAL java/io/PrintStream#println(Ljava/lang/String;)V
+  177: (L00177)
+  178: (line=69)
+  179: FRAME-OP(0)
+  180: IINC 3 (i)
+  181: (L00181)
+  182: FRAME-OP(3)
+  183: ILOAD 3 (i)
+  184: ALOAD 2 (ms)
+  185: ARRAYLENGTH
+  186: IF_ICMPLT L00018
+  187: (L00187)
+  188: (line=105)
+  189: GOTO L00193
+  190: (L00190)
+  191: FRAME-OP(0)
+  192: ASTORE 1
+  193: (L00193)
+  194: (line=108)
+  195: FRAME-OP(3)
+  196: RETURN
+  197: (L00197)
+    2 -> 4 (STACK:1)  
+    2 -> 5 (STACK:0)  
+    5 -> 8 (LOCAL:1)  s: Ltest0330c/Sandbox;
+    8 -> 9 (STACK:0)  
+    9 -> 10 (STACK:0)  
+    10 -> 11 (STACK:0)  
+    14 -> 15 (STACK:0)  
+    11 -> 21 (LOCAL:2)  ms: [Ljava/lang/reflect/Method;
+    15 -> 22 (LOCAL:3)  i: I
+    180 -> 22 (LOCAL:3)  i: I
+    21 -> 23 [1/2] (STACK:0)  
+    22 -> 23 [2/2] (STACK:1)  
+    23 -> 24 (STACK:0)  
+    24 -> 26 [1/2] (STACK:0)  
+    25 -> 26 [2/2] (STACK:1)  
+    26 -> 27 (STACK:0)  
+    11 -> 30 (LOCAL:2)  ms: [Ljava/lang/reflect/Method;
+    15 -> 31 (LOCAL:3)  i: I
+    180 -> 31 (LOCAL:3)  i: I
+    30 -> 32 [1/2] (STACK:0)  
+    31 -> 32 [2/2] (STACK:1)  
+    32 -> 33 (STACK:0)  
+    33 -> 34 (STACK:0)  
+    34 -> 38 (LOCAL:4)  ts: [Ljava/lang/reflect/Type;
+    38 -> 40 [1/2] (STACK:1)  
+    39 -> 40 [2/2] (STACK:2)  
+    37 -> 41 [1/2] (STACK:0)  
+    40 -> 41 [2/2] (STACK:1)  
+    11 -> 45 (LOCAL:2)  ms: [Ljava/lang/reflect/Method;
+    15 -> 46 (LOCAL:3)  i: I
+    180 -> 46 (LOCAL:3)  i: I
+    45 -> 47 [1/2] (STACK:1)  
+    46 -> 47 [2/2] (STACK:2)  
+    47 -> 48 (STACK:1)  
+    48 -> 50 [1/2] (STACK:1)  
+    49 -> 50 [2/2] (STACK:2)  
+    50 -> 51 (STACK:1)  
+    44 -> 52 [1/2] (STACK:0)  
+    51 -> 52 [2/2] (STACK:1)  
+    34 -> 55 (LOCAL:4)  ts: [Ljava/lang/reflect/Type;
+    55 -> 57 [1/2] (STACK:0)  
+    56 -> 57 [2/2] (STACK:1)  
+    57 -> 58 (STACK:0)  
+    58 -> 59 (STACK:0)  
+    59 -> 63 (LOCAL:5)  cs: Ljava/lang/Class;
+    63 -> 64 (STACK:1)  
+    62 -> 65 [1/2] (STACK:0)  
+    64 -> 65 [2/2] (STACK:1)  
+    34 -> 68 (LOCAL:4)  ts: [Ljava/lang/reflect/Type;
+    68 -> 70 [1/2] (STACK:0)  
+    69 -> 70 [2/2] (STACK:1)  
+    70 -> 71 (STACK:0)  
+    71 -> 72 (STACK:0)  
+    72 -> 75 (LOCAL:6)  gt: Ljava/lang/reflect/ParameterizedType;
+    75 -> 76 (STACK:0)  
+    76 -> 77 (STACK:0)  
+    77 -> 80 (LOCAL:7)  t: Ljava/lang/reflect/Type;
+    80 -> 81 (STACK:0)  
+    81 -> 82 (STACK:0)  
+    86 -> 89 [1/2] (STACK:2)  
+    88 -> 89 [2/2] (STACK:3)  
+    77 -> 90 (LOCAL:7)  t: Ljava/lang/reflect/Type;
+    86 -> 91 [1/2] (STACK:1)  
+    90 -> 91 [2/2] (STACK:2)  
+    91 -> 92 (STACK:1)  
+    85 -> 93 [1/2] (STACK:0)  
+    92 -> 93 [2/2] (STACK:1)  
+    77 -> 98 (LOCAL:7)  t: Ljava/lang/reflect/Type;
+    98 -> 99 (STACK:1)  
+    97 -> 100 [1/2] (STACK:0)  
+    99 -> 100 [2/2] (STACK:1)  
+    100 -> 101 (STACK:0)  
+    104 -> 106 [1/2] (STACK:0)  
+    105 -> 106 [2/2] (STACK:1)  
+    72 -> 109 (LOCAL:6)  gt: Ljava/lang/reflect/ParameterizedType;
+    109 -> 110 (STACK:0)  
+    110 -> 111 (STACK:0)  
+    111 -> 115 (LOCAL:8)  type3: [Ljava/lang/reflect/Type;
+    115 -> 117 [1/2] (STACK:1)  
+    116 -> 117 [2/2] (STACK:2)  
+    117 -> 118 (STACK:1)  
+    114 -> 119 [1/2] (STACK:0)  
+    118 -> 119 [2/2] (STACK:1)  
+    111 -> 122 (LOCAL:8)  type3: [Ljava/lang/reflect/Type;
+    122 -> 124 [1/2] (STACK:0)  
+    123 -> 124 [2/2] (STACK:1)  
+    124 -> 125 (STACK:0)  
+    125 -> 126 (STACK:0)  
+    129 -> 131 [1/2] (STACK:0)  
+    130 -> 131 [2/2] (STACK:1)  
+    111 -> 135 (LOCAL:8)  type3: [Ljava/lang/reflect/Type;
+    135 -> 137 [1/2] (STACK:1)  
+    136 -> 137 [2/2] (STACK:2)  
+    137 -> 138 (STACK:1)  
+    134 -> 139 [1/2] (STACK:0)  
+    138 -> 139 [2/2] (STACK:1)  
+    111 -> 143 (LOCAL:8)  type3: [Ljava/lang/reflect/Type;
+    143 -> 145 [1/2] (STACK:1)  
+    144 -> 145 [2/2] (STACK:2)  
+    145 -> 146 (STACK:1)  
+    142 -> 147 [1/2] (STACK:0)  
+    146 -> 147 [2/2] (STACK:1)  
+    111 -> 150 (LOCAL:8)  type3: [Ljava/lang/reflect/Type;
+    150 -> 152 [1/2] (STACK:0)  
+    151 -> 152 [2/2] (STACK:1)  
+    152 -> 153 (STACK:0)  
+    153 -> 154 (STACK:0)  
+    154 -> 158 (LOCAL:9)  c4: Ljava/lang/Class;
+    158 -> 159 (STACK:1)  
+    159 -> 160 (STACK:1)  
+    157 -> 161 [1/2] (STACK:0)  
+    160 -> 161 [2/2] (STACK:1)  
+    154 -> 165 (LOCAL:9)  c4: Ljava/lang/Class;
+    165 -> 166 (STACK:1)  
+    164 -> 167 [1/2] (STACK:0)  
+    166 -> 167 [2/2] (STACK:1)  
+    174 -> 176 [1/2] (STACK:0)  
+    175 -> 176 [2/2] (STACK:1)  
+    15 -> 180 (LOCAL:3)  i: I
+    180 -> 180 (LOCAL:3)  i: I
+    15 -> 183 (LOCAL:3)  i: I
+    180 -> 183 (LOCAL:3)  i: I
+    11 -> 184 (LOCAL:2)  ms: [Ljava/lang/reflect/Method;
+    184 -> 185 (STACK:1)  
+    183 -> 186 [1/2] (STACK:0)  
+    185 -> 186 [2/2] (STACK:1)  
+    -1 -> 192 (STACK:0)  
+    [CFLOW] 0 -> 1
+    [CFLOW] 1 -> 2
+    [CFLOW] 2 -> 3
+    [CFLOW] 3 -> 4
+    [CFLOW] 4 -> 5
+    [CFLOW] 5 -> 6
+    [CFLOW] 6 -> 7
+    [CFLOW] 7 -> 8
+    [CFLOW] 8 -> 9
+    [CFLOW] 9 -> 10
+    [CFLOW] 10 -> 11
+    [CFLOW] 11 -> 12
+    [CFLOW] 12 -> 13
+    [CFLOW] 13 -> 14
+    [CFLOW] 14 -> 15
+    [CFLOW] 15 -> 16
+    [CFLOW] 16 -> 17
+    [CFLOW] 17 -> 181
+    [CFLOW] 18 -> 19
+    [CFLOW] 19 -> 20
+    [CFLOW] 20 -> 21
+    [CFLOW] 21 -> 22
+    [CFLOW] 22 -> 23
+    [CFLOW] 23 -> 24
+    [CFLOW] 24 -> 25
+    [CFLOW] 25 -> 26
+    [CFLOW] 26 -> 27
+    [CFLOW] 27 -> 28
+    [CFLOW] 27 -> 177
+    [CFLOW] 28 -> 29
+    [CFLOW] 29 -> 30
+    [CFLOW] 30 -> 31
+    [CFLOW] 31 -> 32
+    [CFLOW] 32 -> 33
+    [CFLOW] 33 -> 34
+    [CFLOW] 34 -> 35
+    [CFLOW] 35 -> 36
+    [CFLOW] 36 -> 37
+    [CFLOW] 37 -> 38
+    [CFLOW] 38 -> 39
+    [CFLOW] 39 -> 40
+    [CFLOW] 40 -> 41
+    [CFLOW] 41 -> 42
+    [CFLOW] 42 -> 43
+    [CFLOW] 43 -> 44
+    [CFLOW] 44 -> 45
+    [CFLOW] 45 -> 46
+    [CFLOW] 46 -> 47
+    [CFLOW] 47 -> 48
+    [CFLOW] 48 -> 49
+    [CFLOW] 49 -> 50
+    [CFLOW] 50 -> 51
+    [CFLOW] 51 -> 52
+    [CFLOW] 52 -> 53
+    [CFLOW] 53 -> 54
+    [CFLOW] 54 -> 55
+    [CFLOW] 55 -> 56
+    [CFLOW] 56 -> 57
+    [CFLOW] 57 -> 58
+    [CFLOW] 58 -> 59
+    [CFLOW] 59 -> 60
+    [CFLOW] 60 -> 61
+    [CFLOW] 61 -> 62
+    [CFLOW] 62 -> 63
+    [CFLOW] 63 -> 64
+    [CFLOW] 64 -> 65
+    [CFLOW] 65 -> 66
+    [CFLOW] 66 -> 67
+    [CFLOW] 67 -> 68
+    [CFLOW] 68 -> 69
+    [CFLOW] 69 -> 70
+    [CFLOW] 70 -> 71
+    [CFLOW] 71 -> 72
+    [CFLOW] 72 -> 73
+    [CFLOW] 73 -> 74
+    [CFLOW] 74 -> 75
+    [CFLOW] 75 -> 76
+    [CFLOW] 76 -> 77
+    [CFLOW] 77 -> 78
+    [CFLOW] 78 -> 79
+    [CFLOW] 79 -> 80
+    [CFLOW] 80 -> 81
+    [CFLOW] 81 -> 82
+    [CFLOW] 82 -> 83
+    [CFLOW] 82 -> 94
+    [CFLOW] 83 -> 84
+    [CFLOW] 84 -> 85
+    [CFLOW] 85 -> 86
+    [CFLOW] 86 -> 87
+    [CFLOW] 87 -> 88
+    [CFLOW] 88 -> 89
+    [CFLOW] 89 -> 90
+    [CFLOW] 90 -> 91
+    [CFLOW] 91 -> 92
+    [CFLOW] 92 -> 93
+    [CFLOW] 93 -> 94
+    [CFLOW] 94 -> 95
+    [CFLOW] 95 -> 96
+    [CFLOW] 96 -> 97
+    [CFLOW] 97 -> 98
+    [CFLOW] 98 -> 99
+    [CFLOW] 99 -> 100
+    [CFLOW] 100 -> 101
+    [CFLOW] 101 -> 102
+    [CFLOW] 101 -> 177
+    [CFLOW] 102 -> 103
+    [CFLOW] 103 -> 104
+    [CFLOW] 104 -> 105
+    [CFLOW] 105 -> 106
+    [CFLOW] 106 -> 107
+    [CFLOW] 107 -> 108
+    [CFLOW] 108 -> 109
+    [CFLOW] 109 -> 110
+    [CFLOW] 110 -> 111
+    [CFLOW] 111 -> 112
+    [CFLOW] 112 -> 113
+    [CFLOW] 113 -> 114
+    [CFLOW] 114 -> 115
+    [CFLOW] 115 -> 116
+    [CFLOW] 116 -> 117
+    [CFLOW] 117 -> 118
+    [CFLOW] 118 -> 119
+    [CFLOW] 119 -> 120
+    [CFLOW] 120 -> 121
+    [CFLOW] 121 -> 122
+    [CFLOW] 122 -> 123
+    [CFLOW] 123 -> 124
+    [CFLOW] 124 -> 125
+    [CFLOW] 125 -> 126
+    [CFLOW] 126 -> 127
+    [CFLOW] 126 -> 171
+    [CFLOW] 127 -> 128
+    [CFLOW] 128 -> 129
+    [CFLOW] 129 -> 130
+    [CFLOW] 130 -> 131
+    [CFLOW] 131 -> 132
+    [CFLOW] 132 -> 133
+    [CFLOW] 133 -> 134
+    [CFLOW] 134 -> 135
+    [CFLOW] 135 -> 136
+    [CFLOW] 136 -> 137
+    [CFLOW] 137 -> 138
+    [CFLOW] 138 -> 139
+    [CFLOW] 139 -> 140
+    [CFLOW] 140 -> 141
+    [CFLOW] 141 -> 142
+    [CFLOW] 142 -> 143
+    [CFLOW] 143 -> 144
+    [CFLOW] 144 -> 145
+    [CFLOW] 145 -> 146
+    [CFLOW] 146 -> 147
+    [CFLOW] 147 -> 148
+    [CFLOW] 148 -> 149
+    [CFLOW] 149 -> 150
+    [CFLOW] 150 -> 151
+    [CFLOW] 151 -> 152
+    [CFLOW] 152 -> 153
+    [CFLOW] 153 -> 154
+    [CFLOW] 154 -> 155
+    [CFLOW] 155 -> 156
+    [CFLOW] 156 -> 157
+    [CFLOW] 157 -> 158
+    [CFLOW] 158 -> 159
+    [CFLOW] 159 -> 160
+    [CFLOW] 160 -> 161
+    [CFLOW] 161 -> 162
+    [CFLOW] 162 -> 163
+    [CFLOW] 163 -> 164
+    [CFLOW] 164 -> 165
+    [CFLOW] 165 -> 166
+    [CFLOW] 166 -> 167
+    [CFLOW] 167 -> 168
+    [CFLOW] 168 -> 169
+    [CFLOW] 169 -> 170
+    [CFLOW] 170 -> 177
+    [CFLOW] 171 -> 172
+    [CFLOW] 172 -> 173
+    [CFLOW] 173 -> 174
+    [CFLOW] 174 -> 175
+    [CFLOW] 175 -> 176
+    [CFLOW] 176 -> 177
+    [CFLOW] 177 -> 178
+    [CFLOW] 178 -> 179
+    [CFLOW] 179 -> 180
+    [CFLOW] 180 -> 181
+    [CFLOW] 181 -> 182
+    [CFLOW] 182 -> 183
+    [CFLOW] 183 -> 184
+    [CFLOW] 184 -> 185
+    [CFLOW] 185 -> 186
+    [CFLOW] 186 -> 18
+    [CFLOW] 186 -> 187
+    [CFLOW] 187 -> 188
+    [CFLOW] 188 -> 189
+    [CFLOW] 189 -> 193
+    [CFLOW] 190 -> 191
+    [CFLOW] 191 -> 192
+    [CFLOW] 192 -> 193
+    [CFLOW] 193 -> 194
+    [CFLOW] 194 -> 195
+    [CFLOW] 195 -> 196
+    [Control] 27 -> 28
+    [Control] 27 -> 29
+    [Control] 27 -> 30
+    [Control] 27 -> 31
+    [Control] 27 -> 32
+    [Control] 27 -> 33
+    [Control] 27 -> 34
+    [Control] 27 -> 35
+    [Control] 27 -> 36
+    [Control] 27 -> 37
+    [Control] 27 -> 38
+    [Control] 27 -> 39
+    [Control] 27 -> 40
+    [Control] 27 -> 41
+    [Control] 27 -> 42
+    [Control] 27 -> 43
+    [Control] 27 -> 44
+    [Control] 27 -> 45
+    [Control] 27 -> 46
+    [Control] 27 -> 47
+    [Control] 27 -> 48
+    [Control] 27 -> 49
+    [Control] 27 -> 50
+    [Control] 27 -> 51
+    [Control] 27 -> 52
+    [Control] 27 -> 53
+    [Control] 27 -> 54
+    [Control] 27 -> 55
+    [Control] 27 -> 56
+    [Control] 27 -> 57
+    [Control] 27 -> 58
+    [Control] 27 -> 59
+    [Control] 27 -> 60
+    [Control] 27 -> 61
+    [Control] 27 -> 62
+    [Control] 27 -> 63
+    [Control] 27 -> 64
+    [Control] 27 -> 65
+    [Control] 27 -> 66
+    [Control] 27 -> 67
+    [Control] 27 -> 68
+    [Control] 27 -> 69
+    [Control] 27 -> 70
+    [Control] 27 -> 71
+    [Control] 27 -> 72
+    [Control] 27 -> 73
+    [Control] 27 -> 74
+    [Control] 27 -> 75
+    [Control] 27 -> 76
+    [Control] 27 -> 77
+    [Control] 27 -> 78
+    [Control] 27 -> 79
+    [Control] 27 -> 80
+    [Control] 27 -> 81
+    [Control] 27 -> 82
+    [Control] 27 -> 94
+    [Control] 27 -> 95
+    [Control] 27 -> 96
+    [Control] 27 -> 97
+    [Control] 27 -> 98
+    [Control] 27 -> 99
+    [Control] 27 -> 100
+    [Control] 27 -> 101
+    [Control] 82 -> 83
+    [Control] 82 -> 84
+    [Control] 82 -> 85
+    [Control] 82 -> 86
+    [Control] 82 -> 87
+    [Control] 82 -> 88
+    [Control] 82 -> 89
+    [Control] 82 -> 90
+    [Control] 82 -> 91
+    [Control] 82 -> 92
+    [Control] 82 -> 93
+    [Control] 101 -> 102
+    [Control] 101 -> 103
+    [Control] 101 -> 104
+    [Control] 101 -> 105
+    [Control] 101 -> 106
+    [Control] 101 -> 107
+    [Control] 101 -> 108
+    [Control] 101 -> 109
+    [Control] 101 -> 110
+    [Control] 101 -> 111
+    [Control] 101 -> 112
+    [Control] 101 -> 113
+    [Control] 101 -> 114
+    [Control] 101 -> 115
+    [Control] 101 -> 116
+    [Control] 101 -> 117
+    [Control] 101 -> 118
+    [Control] 101 -> 119
+    [Control] 101 -> 120
+    [Control] 101 -> 121
+    [Control] 101 -> 122
+    [Control] 101 -> 123
+    [Control] 101 -> 124
+    [Control] 101 -> 125
+    [Control] 101 -> 126
+    [Control] 126 -> 127
+    [Control] 126 -> 128
+    [Control] 126 -> 129
+    [Control] 126 -> 130
+    [Control] 126 -> 131
+    [Control] 126 -> 132
+    [Control] 126 -> 133
+    [Control] 126 -> 134
+    [Control] 126 -> 135
+    [Control] 126 -> 136
+    [Control] 126 -> 137
+    [Control] 126 -> 138
+    [Control] 126 -> 139
+    [Control] 126 -> 140
+    [Control] 126 -> 141
+    [Control] 126 -> 142
+    [Control] 126 -> 143
+    [Control] 126 -> 144
+    [Control] 126 -> 145
+    [Control] 126 -> 146
+    [Control] 126 -> 147
+    [Control] 126 -> 148
+    [Control] 126 -> 149
+    [Control] 126 -> 150
+    [Control] 126 -> 151
+    [Control] 126 -> 152
+    [Control] 126 -> 153
+    [Control] 126 -> 154
+    [Control] 126 -> 155
+    [Control] 126 -> 156
+    [Control] 126 -> 157
+    [Control] 126 -> 158
+    [Control] 126 -> 159
+    [Control] 126 -> 160
+    [Control] 126 -> 161
+    [Control] 126 -> 162
+    [Control] 126 -> 163
+    [Control] 126 -> 164
+    [Control] 126 -> 165
+    [Control] 126 -> 166
+    [Control] 126 -> 167
+    [Control] 126 -> 168
+    [Control] 126 -> 169
+    [Control] 126 -> 170
+    [Control] 126 -> 171
+    [Control] 126 -> 172
+    [Control] 126 -> 173
+    [Control] 126 -> 174
+    [Control] 126 -> 175
+    [Control] 126 -> 176
+    [Control] 186 -> 18
+    [Control] 186 -> 19
+    [Control] 186 -> 20
+    [Control] 186 -> 21
+    [Control] 186 -> 22
+    [Control] 186 -> 23
+    [Control] 186 -> 24
+    [Control] 186 -> 25
+    [Control] 186 -> 26
+    [Control] 186 -> 27
+    [Control] 186 -> 177
+    [Control] 186 -> 178
+    [Control] 186 -> 179
+    [Control] 186 -> 180
+    [Control] 186 -> 181
+    [Control] 186 -> 182
+    [Control] 186 -> 183
+    [Control] 186 -> 184
+    [Control] 186 -> 185
+test0330c/Sandbox#abstMethod#()Ljava/lang/String;#null
+  0: (L00000)
+  1: (line=112)
+  2: LDC This Method is created by Sandbox
+  3: ARETURN
+  4: (L00004)
+    2 -> 3 (STACK:0)  
+    [CFLOW] 0 -> 1
+    [CFLOW] 1 -> 2
+    [CFLOW] 2 -> 3
+test0330c/Sandbox#dammyMethod#()Ljava/lang/String;#null
+  0: (L00000)
+  1: (line=118)
+  2: ACONST_NULL
+  3: ARETURN
+  4: (L00004)
+    2 -> 3 (STACK:0)  
+    [CFLOW] 0 -> 1
+    [CFLOW] 1 -> 2
+    [CFLOW] 2 -> 3
+test0330c/Sandbox#interMethod#()Ljava/lang/String;#null
+  0: (L00000)
+  1: (line=123)
+  2: LDC This Method is created by Sandbox
+  3: ARETURN
+  4: (L00004)
+    2 -> 3 (STACK:0)  
+    [CFLOW] 0 -> 1
+    [CFLOW] 1 -> 2
+    [CFLOW] 2 -> 3
+test0330c/Sandbox#dammyMethodI#()Ljava/lang/String;#null
+  0: (L00000)
+  1: (line=128)
+  2: ACONST_NULL
+  3: ARETURN
+  4: (L00004)
+    2 -> 3 (STACK:0)  
+    [CFLOW] 0 -> 1
+    [CFLOW] 1 -> 2
+    [CFLOW] 2 -> 3
+test0330c/Sandbox#testMethod#(ILjava/lang/String;[D)I#null
+  0: (L00000)
+  1: (line=132)
+  2: ICONST_0
+  3: IRETURN
+  4: (L00004)
+    2 -> 3 (STACK:0)  
+    [CFLOW] 0 -> 1
+    [CFLOW] 1 -> 2
+    [CFLOW] 2 -> 3
