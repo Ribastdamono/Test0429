@@ -120,7 +120,6 @@ public class Sandbox extends SandAbst implements SandInter{
 
 	@Override
 	public String interMethod(){
-	    String s = "this is iner method";
 		return "This Method is created by Sandbox";
 	}
 	@Override
